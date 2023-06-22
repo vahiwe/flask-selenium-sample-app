@@ -22,7 +22,7 @@ def selenium_test():
   options.add_argument('--no-sandbox')
   options.add_argument('--disable-dev-shm-usage')
 
-  driver = webdriver.Chrome('./chromedriver', chrome_options=options)
+  driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
   #driver=webdriver.firefox()
   #driver=webdriver.ie()
 
@@ -44,7 +44,7 @@ def selenium_test():
   driver.close()
 
   print("sample test case successfully completed")
-  
+
   return 'Hello, Selenium!'
 
 if __name__ == '__main__':
